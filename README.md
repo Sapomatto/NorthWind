@@ -1,8 +1,8 @@
-Northwind ETL & Analytics Pipeline
+# Northwind ETL & Analytics Pipeline
 
 Este proyecto implementa un flujo de datos de extremo a extremo (End-to-End) utilizando KNIME para los procesos de extracción, transformación y limpieza de datos (ETL), y Power BI para el modelado de datos relacional y el diseño de un tablero analítico de negocio (Business Intelligence).
 
-📊 Arquitectura del Proyecto
+## Arquitectura del Proyecto
 
 Origen de Datos: Base de datos relacional transaccional (Northwind).
 
@@ -10,7 +10,7 @@ Proceso ETL (KNIME): Limpieza de strings, tratamiento de valores nulos, estandar
 
 Modelado y Visualización (Power BI): Diseño de modelo estrella (Star Schema) e implementación de medidas avanzadas en DAX para la toma de decisiones estratégicas.
 
-🛠️ Fase 1: ETL y Calidad de Datos (KNIME)
+## Fase 1: ETL y Calidad de Datos (KNIME)
 
 El flujo de KNIME automatiza la limpieza y estructuración de las 8 tablas de la base de datos original.
 
@@ -28,7 +28,7 @@ Ingeniería de Características: Generación del campo calculado de ventas anal�
 
 Pega aquí una captura de pantalla de tu flujo de KNIME para que el reclutador vea tu estructura visual de nodos.
 
-📐 Fase 2: Modelado Relacional (Power BI)
+## Fase 2: Modelado Relacional (Power BI)
 
 Una vez exportados los datos procesados en KNIME, se importaron a Power BI construyendo un Modelo Estrella eficiente para optimizar las consultas y el rendimiento del reporte.
 
@@ -44,7 +44,7 @@ Categorías (1) ─── * → Productos ─── (1) ─── * → Detalles
 
 Proveedores (1) ─── * → Productos
 
-📈 Fase 3: Métricas de Negocio (DAX)
+## Fase 3: Métricas de Negocio (DAX)
 
 Se desarrolló un set de medidas analíticas en DAX para proveer de KPIs interactivos al negocio:
 
@@ -78,7 +78,7 @@ DATEDIFF(Dim_Empleados[fecha_contratacion], TODAY(), YEAR)
 
 Antigüedad del personal de ventas.
 
-🖥️ Dashboard Analítico Interactiva
+## Dashboard Analítico Interactiva
 
 El reporte interactivo final incluye:
 
@@ -90,7 +90,7 @@ Segmentadores Dinámicos: Filtros por zona geográfica, cliente estratégico y r
 
 Pega aquí una o dos capturas de pantalla de tu dashboard final en Power BI. El diseño visual es lo que vende tu trabajo.
 
-🚀 Cómo replicar este proyecto
+## Cómo replicar este proyecto
 
 Descarga el flujo de KNIME (.knwf) ubicado en la carpeta /knime de este repositorio e impórtalo en tu espacio de trabajo.
 
